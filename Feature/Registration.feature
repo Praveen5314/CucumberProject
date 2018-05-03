@@ -1,19 +1,22 @@
 @tag
 Feature: Verify Registration Details
 
+Background: 
+ Given the user in Demoqa Website
+
 @tag1
-Scenario: Verify fname and lname fields
-Given the user in demoqa website
-When the user enters fname and lname
-Then the user verifies the entered text in fname and lname
+Scenario: Verify FirstName and LastName fields
+
+When the user enters FirstName and LastName
+Then the user verifies the entered text in FirstName and LastName
 
 @tag2
-Scenario: Verify marital status and hobby
-When the user choose marital status and hobby
-Then the user verifies the marital status and hobby selected
+Scenario: Verify Marital Status and Hobby
+When the user choose Marital Status and Hobby
+Then the user verifies the selected Marital Status and Hobby 
 
 @tag3
-Scenario: Verify the country details
-When the user check the country has value
-Then the user verifies the country is Afghanistan
+Scenario: Verify the Country Details
+When the user check the Country has value
+Then the user verifies the Country is Afghanistan
 
